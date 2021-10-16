@@ -22,8 +22,8 @@ public class Client {
     }
 
 
-
-
+    public void setYear(int i) {
+    }
 }
 
 
