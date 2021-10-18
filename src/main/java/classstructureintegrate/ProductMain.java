@@ -12,12 +12,10 @@ public class ProductMain {
         int price = scanner.nextInt();
 
         Product product = new Product(name,price);
-
+        System.out.println(product.getName() + product.getPrice());
         product.increasePrice(1);
-        System.out.println(Product.getName() + Product.getPrice());
+        System.out.println(product.getName() + " " + product.getPrice());
         product.decreasePrice(2);
-        System.out.println(Product.getName() + product.getPrice());
+        System.out.println(product.getName() + " " + product.getPrice());
     }
-
-
 }
