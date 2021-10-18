@@ -1,23 +1,30 @@
 package classtructureconstructors;
 
 public class Store {
-    private String product;
-    private int stock;
 
-    public Store(String product, int stock) {
-        this.product = "alma" ;
-        this.stock = 0 ;}
+private String product;
 
+private int stock;
 
+public Store(String product) {
+        this.product = product;
+        stock = 0;
+        }
 
-    public String getProduct() {
+public String getProduct() {
         return product;
-    }
-    public int getStock() {
+        }
+
+public int getStock() {
         return stock;
-    }
+        }
 
-    public void store(int newAmount) { this.stock = this.stock + newAmount;}
-    public void dispatch(int newAmount) { this.stock = this.stock - newAmount;}
+public void store(int amount) {
+        stock = stock + amount;
+        }
 
-}
+public void dispatch(int amount) {
+        stock = stock - amount;
+        }
+
+        }
