@@ -2,6 +2,7 @@ package conventions;
 
 public class Car {
 
+
     private String carType;
     private String engineType;
     private int doors;
