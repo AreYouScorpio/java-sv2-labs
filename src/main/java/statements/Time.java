@@ -24,7 +24,7 @@ public class Time {
 
     public boolean earlierThan(Time other) {
         int thisTimeInSeconds = this.getInSeconds();
-        int otherTimeInSeconds = this.getInSeconds();
+        int otherTimeInSeconds = other.getInSeconds();
         return thisTimeInSeconds<otherTimeInSeconds;
     }
 
