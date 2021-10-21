@@ -11,8 +11,15 @@ public class IntvestmentMain {
         investment.setFund(scanner.nextInt());
         investment.setInterestRate(scanner.nextInt());
 
-        System.out.println(investment.getYield(180));
-        System.out.println(investment.Close());
+        double cost = 0.003;
+
+
+        System.out.println("Bef.összeg: " + investment.getFund());
+        System.out.println("Kamatláb: "+ investment.getInterestRate());
+        System.out.println("Hozam :" + investment.getYield(365));
+        System.out.println("Ktg 0.003% :" + investment.getFund()*cost);
+
+        System.out.println("Kivett összeg: " + investment.close());
 
 
 
