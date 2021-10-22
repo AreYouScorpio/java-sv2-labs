@@ -7,8 +7,9 @@ public class IntvestmentMain {
     public static void main(String[] args) {
         Investment investment = new Investment(100, 3);
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println("Fund: ");
         investment.setFund(scanner.nextInt());
+        System.out.println("Interest rate: ");
         investment.setInterestRate(scanner.nextInt());
 
         double cost = 0.003;
