@@ -13,7 +13,7 @@ public class DivByThree {
         number = scanner.nextInt();
         okay = number % 3 == 0 ;
         System.out.println("Osztható hárommal?" + "\n" + okay);
-        System.out.println(number%3==0 ? "igen" : "nem");
+        System.out.println(okay ? "igen" : "nem");
 
     }
 
