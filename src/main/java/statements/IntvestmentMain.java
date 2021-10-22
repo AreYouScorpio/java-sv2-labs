@@ -16,10 +16,13 @@ public class IntvestmentMain {
 
         System.out.println("Bef.összeg: " + investment.getFund());
         System.out.println("Kamatláb: "+ investment.getInterestRate());
-        System.out.println("Hozam :" + investment.getYield(365));
+        System.out.println("Hozam 365 napra:" + investment.getYield(365));
+        System.out.println("Hozam 70 napra:" + investment.getYield(70));
         System.out.println("Ktg 0.003% :" + investment.getFund()*cost);
 
-        System.out.println("Kivett összeg: " + investment.close());
+        System.out.println("Kivett összeg 70 nap után: " + investment.close(70));
+        System.out.println("Kivett összeg 365 nap után: " + investment.close(365));
+
 
 
 

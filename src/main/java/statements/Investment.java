@@ -29,9 +29,12 @@ public class Investment {
 
     }
 
-    public double close() {
+    public double close(int days) {
+        
+        double total = this.getFund() - this.cost*this.getFund() + this.getYield(days);
+        double payment = active ? total : 0 ;
         this.active = false;
-        return this.fund - this.cost*this.fund + this.getYield(365);
+        return payment;
     }
 
 
