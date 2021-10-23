@@ -20,7 +20,7 @@ public class UserValidator {
     public boolean isValidPassword(String password)
 
     {
-        boolean b = password.length()==8;
+        boolean b = password.length()>=8;
         return b;
     }
 

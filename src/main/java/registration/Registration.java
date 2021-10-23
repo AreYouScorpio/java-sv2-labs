@@ -7,9 +7,13 @@ public class Registration {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("User name? ");
         String username2 = scanner.nextLine();
+        System.out.println("Password? ");
         String password1 = scanner.nextLine();
+        System.out.println("Password again? ");
         String password2 = scanner.nextLine();
+        System.out.println("Email? ");
         String email = scanner.nextLine();
         boolean passwordcheck;
         passwordcheck = password1.equals(password2);
