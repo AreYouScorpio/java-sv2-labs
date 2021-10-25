@@ -16,7 +16,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>distjar.HelloWorld</mainClass>
+                            <mainClass>distjar.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
