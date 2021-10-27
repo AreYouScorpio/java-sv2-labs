@@ -2,8 +2,8 @@ package intromethods.employee;
 
 public class Employee {
     private String name;
-    int hiringYear;
-    int salary;
+    private int hiringYear;
+    private int salary;
 
     public Employee(String name, int hiringYear, int salary) {
         this.name = name;
@@ -40,5 +40,12 @@ public class Employee {
         return this.salary+plusSalary;
     }
 
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", hiringYear=" + hiringYear +
+                ", salary=" + salary +
+                '}';
+    }
 }

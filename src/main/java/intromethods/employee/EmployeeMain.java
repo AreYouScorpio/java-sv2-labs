@@ -9,6 +9,8 @@ public class EmployeeMain {
         Employee employee = new Employee( "Akos", 2021, 500);
 
 
+        System.out.println(employee);
+
         System.out.println("Név: " + employee.getName());
         System.out.println("Kezdés éve: " + employee.getHiringYear());
         System.out.println("Eddigi fizetés: " + employee.getSalary());
