@@ -1,4 +1,4 @@
-/*package objects;
+package objects;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class ObjectsMain {
 
         emptyBook = null;
 
-        boolean isNull = emptybook == null;
+        boolean isNull = emptyBook == null;
         System.out.println(isNull);
 
         Book book = new Book;
@@ -65,4 +65,3 @@ public class ObjectsMain {
 
 
 }
-*/

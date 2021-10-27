@@ -4,6 +4,7 @@ public class EmployeeMain {
 
     public static void main(String[] args) {
 
+
         int raise=100;
 
         Employee employee = new Employee( "Akos", 2021, 500);
