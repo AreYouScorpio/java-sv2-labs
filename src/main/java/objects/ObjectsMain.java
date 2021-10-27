@@ -25,7 +25,7 @@ public class ObjectsMain {
         boolean isNull = emptyBook == null;
         System.out.println(isNull);
 
-        Book book = new Book;
+        Book book = new Book ();
 
         System.out.println(book);
 
@@ -36,7 +36,7 @@ public class ObjectsMain {
 
         book = new Book();
 
-        System.out.println(Book);
+        System.out.println(book);
 
         Book anotherBook = new Book();
 
@@ -51,7 +51,7 @@ public class ObjectsMain {
 
         System.out.println();
 
-        List<Book> books1 = Arrays.asList(new Book(), new Book(), new Book() )
+        List<Book> books1 = Arrays.asList(new Book(), new Book(), new Book() );
         System.out.println(books1);
 
         List<Book> books2 = new ArrayList<>();
