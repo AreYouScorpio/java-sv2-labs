@@ -17,8 +17,6 @@ public class Whitespace {
         return result;
     }
 
-
-
     public static void main(String[] args) {
         Whitespace whitespace = new Whitespace();
         System.out.println(whitespace.makeWhitespaceToStar("sziaa helloo hogy vaaagy"));
