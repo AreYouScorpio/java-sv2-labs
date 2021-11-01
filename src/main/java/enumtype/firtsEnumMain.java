@@ -30,7 +30,13 @@ public class firtsEnumMain {
             System.out.println(firstenum.Oceans.valueOf("ATLANTI"));
             System.out.println(firstenum.Oceans.valueOf("CSENDES"));
             System.out.println(firstenum.Oceans.valueOf("INDIAI"));
-        }
+
+        System.out.println(Football.football.CSATAR.name());
+        System.out.println(Football.football.KOZEPPALYAS.name());
+        System.out.println(Football.football.HATVED.name());
+
+    }
+
 
     }
 
