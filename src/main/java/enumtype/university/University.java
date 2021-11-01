@@ -1,4 +1,4 @@
-package university;
+package enumtype.university;
 
 public enum University {
     BME("Budapesti Muszaki Egyetem"), SZE("Szechenyi Istvan Egyetem"), BKE("Bpi Kozgaz Egyetem")   ;

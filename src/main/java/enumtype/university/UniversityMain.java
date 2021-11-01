@@ -1,4 +1,4 @@
-package university;
+package enumtype.university;
 
 public class UniversityMain {
 

@@ -1,4 +1,4 @@
-package solarsystem;
+package enumtype.solarsystem;
 
 
 public enum SolarSystem {
