@@ -8,10 +8,6 @@ public class Codes
 {
     // List<String> originalList = new ArrayList<>();
 
-
-    public Codes() {
-    }
-
     public List<String> getCodesStartWithLetter(List<String> originalList) {
         List<String> newList = new ArrayList<>();
 
