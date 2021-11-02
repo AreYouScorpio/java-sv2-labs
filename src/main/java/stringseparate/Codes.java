@@ -19,7 +19,6 @@ public class Codes
 
             if (Character.isAlphabetic(originalList.get(i).charAt(0))) {
                 newList.add(originalList.get(i));
-
             }
         }
         return newList;
@@ -28,8 +27,8 @@ public class Codes
     public static void main(String[] args) {
         Codes codes = new Codes();
         List<String> originalList = Arrays.asList("jdlasj", "8z897", "s122", "kkllk222");
-        codes.getCodesStartWithLetter(originalList);
-        System.out.println();
+        originalList=codes.getCodesStartWithLetter(originalList);
+        System.out.println(originalList.toString());
 
     }
 }
