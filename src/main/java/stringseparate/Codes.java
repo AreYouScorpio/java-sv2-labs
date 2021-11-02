@@ -20,6 +20,10 @@ public class Codes
         return newList;
 
     }
+
+
+
+
     public static void main(String[] args) {
         Codes codes = new Codes();
         List<String> originalList = Arrays.asList("jdlasj", "8z897", "s122", "kkllk222");
