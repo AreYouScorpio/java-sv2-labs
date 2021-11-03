@@ -24,7 +24,7 @@ public class MeetingRoomController {
     public static int runMenu(){
         Scanner scanner = new Scanner(System.in);
         int menuChoice = scanner.nextInt();
-        scanner.nextLine();
+        //scanner.nextLine();
         return menuChoice;
     }
 
@@ -32,7 +32,7 @@ public class MeetingRoomController {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
         printMenu();
-        System.out.println(runMenu());
+        if (runMenu()==9) {System.exit(0);};
 
 
     }
