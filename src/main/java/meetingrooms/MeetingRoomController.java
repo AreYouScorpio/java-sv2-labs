@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class MeetingRoomController {
 
 
-    Office office = new Office();
+    // Office office = new Office();
 
     public static void printMenu() {
         System.out.println("1. Tárgyaló rögzítése");
@@ -19,24 +19,61 @@ public class MeetingRoomController {
         System.out.println("9. Kilépés");
     }
 
-    public static int runMenu(){
+    public static Office readOffice(){
+
+        Office newOffice = new Office();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Új tárgyaló");
+        System.out.println("Kérem a tárgyaló nevét: ");
+        String nameNewOffice = scanner.nextLine();
+        System.out.println("Kérem a tárgyaló méreteit - hossza: ");
+        int lengthNewOffice = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Kérem a tárgyaló méreteit - szélessége: ");
+        int widthNewOffice = scanner.nextInt();
+        scanner.nextLine();
+        newOffice.addMeetingRoom(nameNewOffice, lengthNewOffice, widthNewOffice);
+        return newOffice;
+    }
+
+
+
+    public void boolean runMenu(){
         printMenu();
         Scanner scanner = new Scanner(System.in);
         int menuChoice = scanner.nextInt();
-        //scanner.nextLine();
-        if (menuChoice==8) {
-            System.out.println("8");
-        };if (menuChoice==9) {
-            System.exit(0);
+
+
+        if (menuChoice==1) {
+            System.out.println("1");
+            readOffice();
+
+
+        }
+
+        if (menuChoice==9) {
+            System.out.println("9");
+            return true;
         };
-        return menuChoice;
+
+
+
+
+
+
+
+        return false;
     }
+
+
 
     public static void main(String[] args) {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
+        boolean exit = false;
+        if (exit==false) runMenu();
 
-        runMenu();
+
     }
 
 }
