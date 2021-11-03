@@ -21,14 +21,18 @@ public class MeetingRoomController {
 
     }
 
-    public int runMenu(){
+    public static int runMenu(){
         Scanner scanner = new Scanner(System.in);
         int menuChoice = scanner.nextInt();
+        scanner.nextLine();
         return menuChoice;
     }
 
     public static void main(String[] args) {
+        MeetingRoomController meetingRoomController = new MeetingRoomController();
+        Office office = new Office();
         printMenu();
+        System.out.println(runMenu());
 
 
     }
