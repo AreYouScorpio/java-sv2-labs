@@ -66,9 +66,6 @@ public class MeetingRoomController {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
         while(true) runMenu();
-        /*for (int i=1; i<2; i=0) {
-            runMenu();
-        } */
     }
 
 }
