@@ -8,8 +8,6 @@ public class MeetingRoomController {
     Office office = new Office();
 
     public static void printMenu() {
-
-
         System.out.println("1. Tárgyaló rögzítése");
         System.out.println("2. Tárgyalók sorrendben");
         System.out.println("3. Tárgyalók visszafele sorrendben");
@@ -19,7 +17,6 @@ public class MeetingRoomController {
         System.out.println("7. Keresés névtöredék alapján");
         System.out.println("8. Keresés terület alapján");
         System.out.println("9. Kilépés");
-
     }
 
     public static int runMenu(){
@@ -29,6 +26,8 @@ public class MeetingRoomController {
         //scanner.nextLine();
         if (menuChoice==8) {
             System.out.println("8");
+        };if (menuChoice==9) {
+            System.exit(0);
         };
         return menuChoice;
     }
@@ -38,7 +37,6 @@ public class MeetingRoomController {
         Office office = new Office();
 
         runMenu();
-
     }
 
 }
