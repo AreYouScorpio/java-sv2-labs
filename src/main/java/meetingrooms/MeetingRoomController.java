@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class MeetingRoomController {
 
+
     Office office = new Office();
 
     public static void printMenu() {
@@ -22,18 +23,21 @@ public class MeetingRoomController {
     }
 
     public static int runMenu(){
+        printMenu();
         Scanner scanner = new Scanner(System.in);
         int menuChoice = scanner.nextInt();
         //scanner.nextLine();
+        if (menuChoice==8) {
+            System.out.println("8");
+        };
         return menuChoice;
     }
 
     public static void main(String[] args) {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
-        printMenu();
-        if (runMenu()==9) {System.exit(0);};
 
+        runMenu();
 
     }
 
