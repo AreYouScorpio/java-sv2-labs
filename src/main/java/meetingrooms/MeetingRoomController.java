@@ -65,10 +65,10 @@ public class MeetingRoomController {
     public static void main(String[] args) {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
-        runMenu();
-        for (int i=1; i<2; i=0) {
+        while(true) runMenu();
+        /*for (int i=1; i<2; i=0) {
             runMenu();
-        }
+        } */
     }
 
 }
