@@ -57,11 +57,6 @@ public class MeetingRoomController {
         };
 
 
-
-
-
-
-
         return;
     }
 
@@ -71,10 +66,9 @@ public class MeetingRoomController {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
         runMenu();
-        // int running = 0;
-        // if (running<=8) {runMenu(0);} else {System.exit(0);};
-
-
+        for (int i=1; i<2; i=0) {
+            runMenu();
+        }
     }
 
 }
