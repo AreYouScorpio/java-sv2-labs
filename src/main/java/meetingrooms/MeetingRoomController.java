@@ -38,7 +38,7 @@ public class MeetingRoomController {
 
 
 
-    public void boolean runMenu(){
+    public static void runMenu(){
         printMenu();
         Scanner scanner = new Scanner(System.in);
         int menuChoice = scanner.nextInt();
@@ -53,7 +53,7 @@ public class MeetingRoomController {
 
         if (menuChoice==9) {
             System.out.println("9");
-            return true;
+            System.exit(0);
         };
 
 
@@ -62,7 +62,7 @@ public class MeetingRoomController {
 
 
 
-        return false;
+        return;
     }
 
 
@@ -70,8 +70,9 @@ public class MeetingRoomController {
     public static void main(String[] args) {
         MeetingRoomController meetingRoomController = new MeetingRoomController();
         Office office = new Office();
-        boolean exit = false;
-        if (exit==false) runMenu();
+        runMenu();
+        // int running = 0;
+        // if (running<=8) {runMenu(0);} else {System.exit(0);};
 
 
     }
