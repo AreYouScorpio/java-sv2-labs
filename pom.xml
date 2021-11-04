@@ -17,8 +17,17 @@
 
             <java.version>17</java.version>
 
-        </properties>
 
     </properties>
+
+<dependencies>
+// ! https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.10</version>
+    <scope>test</scope>
+</dependency>
+</dependencies>
 
 </project>
