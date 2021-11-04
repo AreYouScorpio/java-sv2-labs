@@ -123,7 +123,7 @@ public class MeetingRoomController<menuChoice> {
 
         if (menuChoice==6) {
             System.out.println("Adja meg a keresett tárgyaló pontos nevét: ");
-            scanner.nextLine();
+            //scanner.nextLine();
             String meetingRoomSearch = scanner.nextLine();
             for (int i = 0; i < Office.meetingRooms.size(); i++) {
                 if (Office.meetingRooms.get(i).getName().equals(meetingRoomSearch)) {
@@ -136,7 +136,7 @@ public class MeetingRoomController<menuChoice> {
 
         if (menuChoice==7) {
             System.out.println("Adja meg a keresett tárgyaló névrészletét: ");
-            scanner.nextLine();
+            // scanner.nextLine();
             String meetingRoomTextSearch = scanner.nextLine();
             for (int i = 0; i < Office.meetingRooms.size(); i++) {
                 String lowCaseRoom = Office.meetingRooms.get(i).getName().toLowerCase();
@@ -150,7 +150,7 @@ public class MeetingRoomController<menuChoice> {
 
         if (menuChoice==8) {
             System.out.println("Adja meg a keresett tárgyaló területét (nm): ");
-            scanner.nextLine();
+            // scanner.nextLine();
             int meetingRoomQMSearch = scanner.nextInt();
             for (int i = 0; i < Office.meetingRooms.size(); i++) {
                 if ((Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength())>meetingRoomQMSearch) {
