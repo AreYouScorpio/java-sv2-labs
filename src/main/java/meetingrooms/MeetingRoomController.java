@@ -47,6 +47,8 @@ public class MeetingRoomController<menuChoice> {
         String menuChoiceAlphanumeric = scanner.nextLine();
 
 
+        // ez a rész csak azért van, hogy a menüben 1-9 fogadjon csak el számot
+
         int textLength = menuChoiceAlphanumeric.length();
         //for (int i=0 ; i<textLength; i++) {
         if (textLength>1) {
@@ -68,12 +70,10 @@ public class MeetingRoomController<menuChoice> {
         }
     }
 
+        // ez a rész csak azért volt, hogy a menüben 1-9 fogadjon csak el számot
 
 
-        // char[] charList = menuChoiceAlphanumeric.toCharArray();
-        // for (char c: charList) {boolean okay = Character.isAlphabetic(c);}
 
-        // int menuChoice = scanner.nextInt();
 
 
         if (menuChoice==1) {
