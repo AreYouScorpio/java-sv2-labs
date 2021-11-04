@@ -52,11 +52,12 @@ public class MeetingRoomController {
         }
 
         if (menuChoice==2) {
-        System.out.println("Az új teljes tárgyaló lista adatai: ");
-        for (int i=0; i<meetingRooms.size(); i++){
-            System.out.println(Office.meetingRooms.get(i).getName());
-            System.out.println(Office.meetingRooms.get(i).getLength());
-            System.out.println(Office.meetingRooms.get(i).getWidth());
+            System.out.println("Az új teljes tárgyaló lista adatai: ");
+            for (int i = 0; i < Office.meetingRooms.size(); i++) {
+                System.out.println(Office.meetingRooms.get(i).getName());
+                System.out.println(Office.meetingRooms.get(i).getLength());
+                System.out.println(Office.meetingRooms.get(i).getWidth());
+            }
         }
 
 

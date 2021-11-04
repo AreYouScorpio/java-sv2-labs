@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Office {
 
-    public List<MeetingRoom> meetingRooms = new ArrayList<>();
+    public static List<MeetingRoom> meetingRooms = new ArrayList<>();
 
     public void addMeetingRoom(String name, int length, int width){
 
