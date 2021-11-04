@@ -69,6 +69,16 @@ public class MeetingRoomController {
             }
         }
 
+        if (menuChoice==4) {
+            System.out.println("Az új teljes tárgyaló lista minden második eleme: ");
+            for (int i = 0; i < Office.meetingRooms.size(); i++) {
+                if (i%2>0) {
+                System.out.println(Office.meetingRooms.get(i).getName());
+                System.out.println(Office.meetingRooms.get(i).getLength());
+                System.out.println(Office.meetingRooms.get(i).getWidth());
+            }}
+        }
+
 
         if (menuChoice==9) {
             System.out.println("9");
