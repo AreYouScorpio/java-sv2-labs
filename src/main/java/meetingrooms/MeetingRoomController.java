@@ -89,6 +89,19 @@ public class MeetingRoomController {
             }
         }
 
+        if (menuChoice==6) {
+            System.out.println("Adja meg a keresett tárgyaló pontos nevét: ");
+            scanner.nextLine();
+            String meetingRoomSearch = scanner.nextLine();
+            for (int i = 0; i < Office.meetingRooms.size(); i++) {
+                if (Office.meetingRooms.get(i).getName().equals(meetingRoomSearch)) {
+                System.out.println("Név: " +Office.meetingRooms.get(i).getName());
+                System.out.println("Hossz: " +Office.meetingRooms.get(i).getLength());
+                System.out.println("Szélesség: "+Office.meetingRooms.get(i).getWidth());
+                System.out.println("Terület: " + (Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength()) +" nm");
+            }}
+        }
+
 
         if (menuChoice==9) {
             System.out.println("9");
