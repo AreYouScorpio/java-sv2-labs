@@ -3,7 +3,7 @@ package meetingrooms;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class MeetingRoomController {
+public class MeetingRoomController<menuChoice> {
 
 
     // Office office = new Office();
@@ -41,8 +41,39 @@ public class MeetingRoomController {
 
     public static void runMenu(){
         printMenu();
+        int menuChoice=10;
+
         Scanner scanner = new Scanner(System.in);
-        int menuChoice = scanner.nextInt();
+        String menuChoiceAlphanumeric = scanner.nextLine();
+
+
+        int textLength = menuChoiceAlphanumeric.length();
+        //for (int i=0 ; i<textLength; i++) {
+        if (textLength>1) {
+            System.out.println("Egy számot adjon csak meg !");
+            menuChoice = 10;
+        } else {;
+            char character = menuChoiceAlphanumeric.charAt(0);
+            if (!Character.isDigit(character)) {
+                System.out.println("Kérem számot adjon meg!");
+                menuChoice=10;}
+            if (Character.isDigit(character)) {
+                int number = Character.getNumericValue(character);
+                if (number>9 || number<1) {
+                    System.out.println("Kérem 1-9 adjon meg számot!");
+                    menuChoice = 10;
+                } else {
+                menuChoice = number;}
+
+        }
+    }
+
+
+
+        // char[] charList = menuChoiceAlphanumeric.toCharArray();
+        // for (char c: charList) {boolean okay = Character.isAlphabetic(c);}
+
+        // int menuChoice = scanner.nextInt();
 
 
         if (menuChoice==1) {
