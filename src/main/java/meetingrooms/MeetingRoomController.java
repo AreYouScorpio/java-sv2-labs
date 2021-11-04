@@ -1,5 +1,6 @@
 package meetingrooms;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class MeetingRoomController {
@@ -105,9 +106,10 @@ public class MeetingRoomController {
         if (menuChoice==7) {
             System.out.println("Adja meg a keresett tárgyaló névrészletét: ");
             scanner.nextLine();
-            String meetingRoomSearch = scanner.nextLine();
+            String meetingRoomTextSearch = scanner.nextLine();
             for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                if (Office.meetingRooms.get(i).getName().equals(meetingRoomSearch)) {
+                String lowCaseRoom = Office.meetingRooms.get(i).getName().toLowerCase();
+                if (lowCaseRoom.indexOf(meetingRoomTextSearch.toLowerCase())>=0) {
                 System.out.println("Név: " +Office.meetingRooms.get(i).getName());
                 System.out.println("Hossz: " +Office.meetingRooms.get(i).getLength());
                 System.out.println("Szélesség: "+Office.meetingRooms.get(i).getWidth());
