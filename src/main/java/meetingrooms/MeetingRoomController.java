@@ -60,6 +60,15 @@ public class MeetingRoomController {
             }
         }
 
+        if (menuChoice==3) {
+            System.out.println("Az új teljes tárgyaló lista fordított sorrendben: ");
+            for (int i = Office.meetingRooms.size(); i > 0; i--) {
+                System.out.println(Office.meetingRooms.get(i-1).getName());
+                System.out.println(Office.meetingRooms.get(i-1).getLength());
+                System.out.println(Office.meetingRooms.get(i-1).getWidth());
+            }
+        }
+
 
         if (menuChoice==9) {
             System.out.println("9");
