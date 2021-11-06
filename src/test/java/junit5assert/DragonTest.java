@@ -37,5 +37,16 @@ public class DragonTest {
 
     }
 
+    @Test
+    public void testNull() {
+        Dragon dragon = new Dragon("MugliDragon", 1, 30);
+        Dragon dragon2 = null;
+assertNull(dragon2);
+assertNotNull(dragon);
+    }
+
+
+
+
 
 }
