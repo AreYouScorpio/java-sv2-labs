@@ -2,8 +2,7 @@ package junit5assert;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.*;
 
 public class DragonTest {
 
@@ -17,9 +16,26 @@ public class DragonTest {
     }
 
 
-  //  @Test
+    @Test
+    public void testNumberOfHeads() {
+        Dragon dragon = new Dragon("MugliDragon", 1, 30);
+        String name = dragon.name;
+        int head = dragon.getNumberOfHeads();
+        assertEquals(1, dragon.getNumberOfHeads());
+        assertTrue(dragon.getNumberOfHeads() == 1);
+        assertFalse(dragon.getNumberOfHeads() == 2);
+
+    }
 
 
+    @Test
+    public void testHeight() {
+        Dragon dragon = new Dragon("MugliDragon", 1, 30);
+        double height = dragon.getHeight();
+        int head = dragon.getNumberOfHeads();
+        assertEquals(30, dragon.getHeight(), 0.005);
+
+    }
 
 
 }
