@@ -44,6 +44,20 @@ public class DragonTest {
 assertNull(dragon2);
 assertNotNull(dragon);
     }
+    @Test
+    public void testSameObjects() {
+        Dragon dragon = new Dragon("MugliDragon", 1, 30);
+        Dragon dragon2 = dragon;
+assertSame(dragon, dragon2);
+
+    }
+    @Test
+    public void testNotSameObjects() {
+        Dragon dragon = new Dragon("MugliDragon", 1, 30);
+        Dragon dragon2 = new Dragon("MugliDragon", 1, 30);
+//assertSame(dragon, dragon2);
+assertNotSame(dragon, dragon2);
+    }
 
 
 
