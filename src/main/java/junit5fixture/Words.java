@@ -3,6 +3,8 @@ package junit5fixture;
 import java.util.List;
 import java.util.ArrayList;
 
+
+
 public class Words {
     public static List<String> words = new ArrayList<>();
 
