@@ -26,7 +26,8 @@ public class Plane {
 
         plane.addPassenger(passenger);
         plane.addPassenger(passenger2);
-        for (String j: passengers) {
+
+        for (Passenger j: passengers) {
             System.out.println(j);
         }
 
