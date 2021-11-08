@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Plane {
 
-    List<Passenger> passengers = new ArrayList<>();
+    public static List<Passenger> passengers = new ArrayList<>();
     int maxCapa;
 
     public Plane(int maxCapa) {
@@ -21,10 +21,13 @@ public class Plane {
          Passenger passenger = new Passenger("Mugli", "AA", 4);
          Passenger passenger2 = new Passenger("Barbi", "AB", 3);
 
+
+
+
         plane.addPassenger(passenger);
         plane.addPassenger(passenger2);
         for (String j: passengers) {
-            System.out.println(plane.passengers.get(j).getName().toString());
+            System.out.println(j);
         }
 
     }

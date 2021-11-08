@@ -12,6 +12,14 @@ public class Passenger {
         this.pack = pack;
     }
 
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "name='" + name + '\'' +
+                ", ticket='" + ticket + '\'' +
+                ", pack=" + pack +
+                '}';
+    }
 
     public String getName() {
         return name;
