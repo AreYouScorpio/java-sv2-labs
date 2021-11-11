@@ -19,7 +19,16 @@ public class Words {
     public static void main(String[] args) {
         Words words = new Words();
         System.out.println(words.pushWord("hello"));
+        int x=5;
+        int y=2;
+        int z=x++ + (x-4)*y -2;
+        System.out.println(x + " " + z);
 
+        final int i;
+        i = 3;
+        int[] n = {1, 2, 3};
+
+        System.out.println(n[i]);
     }
 
 }

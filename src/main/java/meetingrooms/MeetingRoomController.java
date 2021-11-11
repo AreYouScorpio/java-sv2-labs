@@ -3,6 +3,10 @@ package meetingrooms;
 import java.util.Locale;
 import java.util.Scanner;
 
+import static meetingrooms.Office.printNames;
+import static meetingrooms.Office.printNamesReverse;
+
+
 public class MeetingRoomController<menuChoice> {
 
 
@@ -84,21 +88,15 @@ public class MeetingRoomController<menuChoice> {
         }
 
         if (menuChoice==2) {
-            System.out.println("Az új teljes tárgyaló lista adatai (nevek): ");
-            for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                System.out.println(Office.meetingRooms.get(i).getName());
-                // System.out.println(Office.meetingRooms.get(i).getLength());
-                // System.out.println(Office.meetingRooms.get(i).getWidth());
-            }
+
+            printNames();
+
         }
 
         if (menuChoice==3) {
-            System.out.println("Az új teljes tárgyaló lista fordított sorrendben (nevek): ");
-            for (int i = Office.meetingRooms.size(); i > 0; i--) {
-                System.out.println(Office.meetingRooms.get(i-1).getName());
-                // System.out.println(Office.meetingRooms.get(i-1).getLength());
-                // System.out.println(Office.meetingRooms.get(i-1).getWidth());
-            }
+
+            printNamesReverse();
+
         }
 
         if (menuChoice==4) {
