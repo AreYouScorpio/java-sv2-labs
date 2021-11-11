@@ -3,8 +3,7 @@ package meetingrooms;
 import java.util.Locale;
 import java.util.Scanner;
 
-import static meetingrooms.Office.printNames;
-import static meetingrooms.Office.printNamesReverse;
+import static meetingrooms.Office.*;
 
 
 public class MeetingRoomController<menuChoice> {
@@ -100,49 +99,43 @@ public class MeetingRoomController<menuChoice> {
         }
 
         if (menuChoice==4) {
-            System.out.println("Az új teljes tárgyaló lista minden második eleme (nevek): ");
-            for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                if (i%2>0) {
-                System.out.println(Office.meetingRooms.get(i).getName());
-                // System.out.println(Office.meetingRooms.get(i).getLength());
-                // System.out.println(Office.meetingRooms.get(i).getWidth());
-            }}
+
+            printEvenNames();
+
+
         }
 
         if (menuChoice==5) {
-            System.out.println("Az új teljes tárgyaló lista adatai névvel, méretekkel, területtel: ");
-            for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                System.out.println("Név: " +Office.meetingRooms.get(i).getName());
-                System.out.println("Hossz: " +Office.meetingRooms.get(i).getLength());
-                System.out.println("Szélesség: "+Office.meetingRooms.get(i).getWidth());
-                System.out.println("Terület: " + (Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength()) +" nm");
-            }
+
+            printAreas();
+
         }
 
         if (menuChoice==6) {
-            System.out.println("Adja meg a keresett tárgyaló pontos nevét: ");
-            //scanner.nextLine();
-            String meetingRoomSearch = scanner.nextLine();
-            for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                if (Office.meetingRooms.get(i).getName().equals(meetingRoomSearch)) {
-                System.out.println("Név: " +Office.meetingRooms.get(i).getName());
-                System.out.println("Hossz: " +Office.meetingRooms.get(i).getLength());
-                System.out.println("Szélesség: "+Office.meetingRooms.get(i).getWidth());
-                System.out.println("Terület: " + (Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength()) +" nm");
-            }}
+
+
+            printMeetingRoomsWithName();
+            /*
+            for (int i = 0; i < meetingRooms.size(); i++) {
+                if (meetingRooms.get(i).getName().equals(name)) {
+                System.out.println("Név: " + meetingRooms.get(i).getName());
+                System.out.println("Hossz: " + meetingRooms.get(i).getLength());
+                System.out.println("Szélesség: "+ meetingRooms.get(i).getWidth());
+                System.out.println("Terület: " + (meetingRooms.get(i).getWidth()* meetingRooms.get(i).getLength()) +" nm");
+            }}*/
         }
 
         if (menuChoice==7) {
             System.out.println("Adja meg a keresett tárgyaló névrészletét: ");
             // scanner.nextLine();
             String meetingRoomTextSearch = scanner.nextLine();
-            for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                String lowCaseRoom = Office.meetingRooms.get(i).getName().toLowerCase();
+            for (int i = 0; i < meetingRooms.size(); i++) {
+                String lowCaseRoom = meetingRooms.get(i).getName().toLowerCase();
                 if (lowCaseRoom.indexOf(meetingRoomTextSearch.toLowerCase())>=0) {
-                System.out.println("Név: " +Office.meetingRooms.get(i).getName());
-                System.out.println("Hossz: " +Office.meetingRooms.get(i).getLength());
-                System.out.println("Szélesség: "+Office.meetingRooms.get(i).getWidth());
-                System.out.println("Terület: " + (Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength()) +" nm");
+                System.out.println("Név: " + meetingRooms.get(i).getName());
+                System.out.println("Hossz: " + meetingRooms.get(i).getLength());
+                System.out.println("Szélesség: "+ meetingRooms.get(i).getWidth());
+                System.out.println("Terület: " + (meetingRooms.get(i).getWidth()* meetingRooms.get(i).getLength()) +" nm");
             }}
         }
 
@@ -150,12 +143,12 @@ public class MeetingRoomController<menuChoice> {
             System.out.println("Adja meg a keresett tárgyaló területét (nm): ");
             // scanner.nextLine();
             int meetingRoomQMSearch = scanner.nextInt();
-            for (int i = 0; i < Office.meetingRooms.size(); i++) {
-                if ((Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength())>meetingRoomQMSearch) {
-                    System.out.println("Név: " +Office.meetingRooms.get(i).getName());
-                    System.out.println("Hossz: " +Office.meetingRooms.get(i).getLength());
-                    System.out.println("Szélesség: "+Office.meetingRooms.get(i).getWidth());
-                    System.out.println("Terület: " + (Office.meetingRooms.get(i).getWidth()*Office.meetingRooms.get(i).getLength()) +" nm");
+            for (int i = 0; i < meetingRooms.size(); i++) {
+                if ((meetingRooms.get(i).getWidth()* meetingRooms.get(i).getLength())>meetingRoomQMSearch) {
+                    System.out.println("Név: " + meetingRooms.get(i).getName());
+                    System.out.println("Hossz: " + meetingRooms.get(i).getLength());
+                    System.out.println("Szélesség: "+ meetingRooms.get(i).getWidth());
+                    System.out.println("Terület: " + (meetingRooms.get(i).getWidth()* meetingRooms.get(i).getLength()) +" nm");
                 }}
         }
 
