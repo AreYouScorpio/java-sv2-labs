@@ -83,7 +83,6 @@ public class MeetingRoomController<menuChoice> {
             System.out.println("1");
             readOffice();
 
-
         }
 
         if (menuChoice==2) {
@@ -102,7 +101,6 @@ public class MeetingRoomController<menuChoice> {
 
             printEvenNames();
 
-
         }
 
         if (menuChoice==5) {
@@ -113,16 +111,11 @@ public class MeetingRoomController<menuChoice> {
 
         if (menuChoice==6) {
 
+            System.out.println("Adja meg a keresett tárgyaló pontos nevét: ");
+            String name = scanner.nextLine();
 
-            printMeetingRoomsWithName();
-            /*
-            for (int i = 0; i < meetingRooms.size(); i++) {
-                if (meetingRooms.get(i).getName().equals(name)) {
-                System.out.println("Név: " + meetingRooms.get(i).getName());
-                System.out.println("Hossz: " + meetingRooms.get(i).getLength());
-                System.out.println("Szélesség: "+ meetingRooms.get(i).getWidth());
-                System.out.println("Terület: " + (meetingRooms.get(i).getWidth()* meetingRooms.get(i).getLength()) +" nm");
-            }}*/
+            printMeetingRoomsWithName(name);
+
         }
 
         if (menuChoice==7) {

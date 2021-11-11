@@ -75,12 +75,14 @@ public class Office {
     }
 
 
-    public static void printMeetingRoomsWithName() {
-
+    public static void printMeetingRoomsWithName(String name) {
+/*
         System.out.println("Adja meg a keresett tárgyaló pontos nevét: ");
         //scanner.nextLine();
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
+
+ */
 
         for (int i = 0; i < Office.meetingRooms.size(); i++) {
             if (Office.meetingRooms.get(i).getName().equals(name)) {
