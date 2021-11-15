@@ -34,7 +34,5 @@ public class Calculator {
             System.out.println(ae.getMessage());
         }
             if (task.equals("*")) System.out.println(a*b);
-
-
     }
 }
