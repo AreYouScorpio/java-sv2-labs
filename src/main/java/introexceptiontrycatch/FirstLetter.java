@@ -8,7 +8,7 @@ public class FirstLetter {
     public static void main(String[] args) {
 
 
-        List<String> words = new ArrayList<>(Arrays.asList("alma", "korte", "cica"));
+        List<String> words = new ArrayList<>(Arrays.asList("alma", "korte", null, "cica"));
         try {
 
             for (String s : words) {
@@ -16,10 +16,12 @@ public class FirstLetter {
             }}
             catch(NullPointerException npe){
                 System.out.println(npe.getMessage());
+                System.out.println(npe.getMessage());
             }
-        System.out.println(words.toString() + "END.");
+        System.out.println(words.toString() + " END.");
     }
 
     }
 
+    // ha null listaelem is van, nem all le hibával, hanem 2x kiírja
 
