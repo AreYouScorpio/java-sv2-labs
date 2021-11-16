@@ -18,14 +18,17 @@ public class SsnValidator {
             System.out.println(checkvalue3); // 6 string
             System.out.println(taj[8]); // 6
 
-            if (checkvalue2 == Integer.parseInt(checkvalue3)) {
+            try{
+           if (checkvalue2 == Integer.parseInt(checkvalue3)) {
 
-            System.out.println("okay");
-            return true;
+               System.out.println("okay");
+               return true;
+           }
+           }
 
-        }
-            else {return false;}
-
-
+            catch (IllegalArgumentException iae) {
+                System.out.println(iae.getMessage());
+            }
+return false;
     }
 }
