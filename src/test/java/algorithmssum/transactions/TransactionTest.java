@@ -13,7 +13,7 @@ class TransactionTest {
         assertEquals("1234-2345-1231", transaction.getAccountNumber());
         assertEquals(TransactionOperation.CREDIT, transaction.getTransactionOperation());
         assertEquals(100000, transaction.getAmount());
-        //  assertTrue(transaction.isCredit());
-        //  assertFalse(transaction.isDebit());
+        assertTrue(transaction.isCredit());
+        assertFalse(transaction.isDebit());
     }
 }

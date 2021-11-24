@@ -11,6 +11,13 @@ public class Transaction {
         this.amount = amount;
     }
 
+    public boolean isCredit() {
+        return transactionOperation == TransactionOperation.CREDIT;
+    }
+    public boolean isDebit() {
+        return transactionOperation == TransactionOperation.DEBIT;
+    }
+
 
 
     public String getAccountNumber() {
