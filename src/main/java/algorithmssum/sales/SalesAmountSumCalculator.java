@@ -11,6 +11,12 @@ public class SalesAmountSumCalculator {
 
             sum += salespeople.get(i).getAmount();
         }
+
+        /* elég lett volna:
+        for (Salesperson salesperson : salespeople) {
+            sum += salesperson.getAmount();
+         */
+
         return sum;
     }
 
