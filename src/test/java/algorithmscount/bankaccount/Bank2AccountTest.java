@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class BankAccountTest {
+class Bank2AccountTest {
 
     @Test
     void createBankAccount() {

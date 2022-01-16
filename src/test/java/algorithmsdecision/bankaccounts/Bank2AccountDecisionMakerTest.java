@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class BankAccountDecisionMakerTest {
+class Bank2AccountDecisionMakerTest {
 
     List<BankAccount> accounts = Arrays.asList(
             new BankAccount("Fred", "123-324-123", 100),

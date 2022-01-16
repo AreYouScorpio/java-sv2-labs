@@ -1,6 +1,5 @@
-package bank;
+package exceptionclass.bank2;
 
-import exceptionclass.Account;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,7 +1,5 @@
-package bank;
+package exceptionclass.bank2;
 
-import classstructureintegrate.Bank;
-import exceptionclass.Account;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -14,7 +12,7 @@ public class BankTest {
 
     double initialBalance;
     List<Account> accounts;
-    Bank bank;
+    Bank2 bank;
 
     @BeforeEach
     void createAccountList() {
@@ -26,12 +24,12 @@ public class BankTest {
         accounts.add(new Account("acc3", initialBalance));
         accounts.add(new Account("acc4", initialBalance));
 
-        bank = new Bank(accounts);
+        bank = new Bank2(accounts);
     }
 
     @Test
     void testNullParameterShouldThrowException() {
-        Exception ex = assertThrows(IllegalArgumentException.class, () -> new Bank(null));
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> new Bank2(null));
         assertEquals("Account list should not be null!", ex.getMessage());
     }
 

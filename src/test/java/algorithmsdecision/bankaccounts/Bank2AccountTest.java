@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class BankAccountTest {
+class Bank2AccountTest {
 
     BankAccount bankAccount = new BankAccount("Fred", "123-324-123", 100);
 
