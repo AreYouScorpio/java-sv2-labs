@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BankTest {
+public class Bank2Test {
 
     double initialBalance;
     List<Account> accounts;
