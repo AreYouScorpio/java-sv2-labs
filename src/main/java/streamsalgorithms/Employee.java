@@ -77,6 +77,7 @@ public class Employee {
                         .stream()
                         .mapToInt(employee -> employee.yearOfBirth)
                         .min();
+
         System.out.println(minAge.getAsInt());
                 employees
                         .stream()
@@ -97,6 +98,8 @@ public class Employee {
                         .mapToInt(employee -> employee.yearOfBirth)
                         .filter(n -> n<1990)
                         .count()>0));
+
+        System.out.println(employees.stream().allMatch(employee -> employee.yearOfBirth<1981));
 
         System.out.print("van 1990 előtt született v2? ");
 
